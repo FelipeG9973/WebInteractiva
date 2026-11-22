@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Personal</title>
+</head>
+<body>
+<form method="POST">
+<p>Nombre 1:</p>
+<input type="text" name="nombre1" required>
+<p>Nombre 2:</p>
+<input type="text" name="nombre2" required>
+<p>Nombre 3:</p>
+<input type="text" name="nombre3" required>
+  <button type="submit">Enviar</button>
+  {% if nombre_mayor %}
+    <p>El nombre con mayor cantidad de caracteres es: {{ nombre_mayor }}</p>
+    <p>El nombre tiene: {{ cantidad }} caracteres</p>
+{% endif %}
+</form>
+</body>
+</html>
